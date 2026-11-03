@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sunny Dohty – The Barista</title>
+<meta name="description" content="Meet Derrick, Sunny Dohty the Barista. Discover specialty coffee, signature drinks, beverage development, menu consulting and creative content.">
+<meta name="theme-color" content="#100a07">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sunny Dohty – The Barista">
+<meta property="og:description" content="Where coffee meets creativity. Good coffee, creative drinks and unforgettable experiences.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#120c09;--bg2:#1b120d;--cream:#f5ead8;--mute:#b9a78e;--gold:#c8965a;--line:rgba(245,234,216,.14);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*:before,*:after{box-sizing:inherit}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--cream);font:400 16px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.02;margin:0}
+a{color:inherit;text-decoration:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:calc(14px + env(safe-area-inset-top,0px)) 5vw 14px;background:rgba(18,12,9,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.logo{font:900 15px 'Playfair Display',serif;letter-spacing:.14em}.logo b{color:var(--gold)}nav .logo{display:flex;align-items:center;gap:10px}.logo img{width:42px;height:42px;border-radius:50%;display:block}.flg{width:96px!important;height:96px!important;margin-bottom:14px}.blg{width:clamp(96px,16vw,150px);height:auto;border-radius:50%;margin-bottom:22px;display:block;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+nav .links{display:flex;gap:22px;align-items:center;font-size:14px}nav .links a{opacity:.8;transition:.25s}nav .links a:hover,nav .links a:focus-visible{opacity:1;color:var(--gold)}
+@media(max-width:760px){nav .links a:not(.btn){display:none}}
+.btn{display:inline-block;border:1px solid var(--gold);padding:13px 26px;border-radius:99px;font-weight:600;font-size:14px;letter-spacing:.06em;cursor:pointer;background:transparent;color:var(--cream);transition:.25s;min-height:44px;font-family:inherit}
+.btn.fill{background:var(--gold);color:#1b120d}.btn:hover,.btn:focus-visible{transform:translateY(-2px);box-shadow:0 8px 28px rgba(200,150,90,.25)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+section{padding:clamp(70px,12vw,140px) 5vw;position:relative}
+.eyebrow{color:var(--gold);letter-spacing:.2em;font-size:12px;text-transform:uppercase;margin-bottom:14px}
+h2{font-size:clamp(34px,6vw,68px);margin-bottom:24px}
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;background:radial-gradient(ellipse at 70% 30%,#5a3a22 0,transparent 55%),radial-gradient(ellipse at 20% 90%,#3a2214 0,transparent 50%),var(--bg)}
+.hero h1{font-size:clamp(44px,10vw,132px);font-weight:900;max-width:12ch}.hero h1 em{color:var(--gold);font-style:normal}
+.hero p{max-width:46ch;color:var(--mute);font-size:clamp(16px,2vw,20px);margin:22px 0 34px}
+.row{display:flex;gap:14px;flex-wrap:wrap}.hero{position:relative;overflow:hidden}.hv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}.hero:before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(18,12,9,.75),rgba(18,12,9,.15) 70%)}.hero>*:not(.hv){position:relative;z-index:2}.hero:before{position:absolute}
+.cups{position:absolute;right:6vw;bottom:10vh;width:min(34vw,340px);aspect-ratio:1;border-radius:50%;background:conic-gradient(from 200deg,#2a170c,#6b4224,#c8965a,#6b4224,#2a170c);opacity:.5;filter:blur(1px);animation:spin 40s linear infinite;mask:radial-gradient(circle,transparent 38%,#000 40%,#000 62%,transparent 64%)}
+
+.pour{height:340vh;position:relative}@media(max-width:899px){.pour{height:300vh}}.stick{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}#pv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#0c0806;display:block}.stick:after{content:'';position:absolute;inset:0;pointer-events:none;z-index:1;background:linear-gradient(180deg,rgba(12,8,6,.5),rgba(12,8,6,0) 30%,rgba(12,8,6,.3))}.pt{text-shadow:0 2px 18px rgba(0,0,0,.65)}@media(min-width:900px){#pv{left:auto;right:5vw;width:min(44vw,calc(100svh*.5625));border-radius:18px}.stick{background:#0c0806 url(assets/hero-bg.jpg) center/cover}.stick:after{background:linear-gradient(90deg,rgba(12,8,6,.6),transparent 50%)}}.pt{position:absolute;left:5vw;top:50%;transform:translateY(-50%);width:min(560px,90vw);z-index:2;will-change:opacity}@media(max-width:899px){.pt{top:15%;transform:none}}.pt h1,.pt h2{font-size:clamp(36px,6.4vw,88px);font-weight:900;line-height:1.04;letter-spacing:-.035em;margin:0}.pt h1 em,.pt h2 em{color:var(--gold);font-style:normal}.pt p{color:var(--mute);margin:18px 0 26px;font-size:clamp(15px,1.8vw,19px)}.quote-stage{position:relative;min-height:clamp(270px,44vh,410px);margin:14px 0 4px;backdrop-filter:blur(2px)}.quote-panel{position:absolute;inset:0 auto 0 0;width:min(100%,650px);display:flex;flex-direction:column;justify-content:center;padding:clamp(18px,3vw,32px);border:1px solid rgba(245,234,216,.16);border-radius:20px;background:linear-gradient(110deg,rgba(18,12,9,.64),rgba(18,12,9,.2));backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 20px 70px rgba(0,0,0,.18);opacity:0;transform:translateY(14px);pointer-events:none;will-change:opacity,transform}.quote-panel p{max-width:39ch;margin:18px 0 0;color:var(--cream);font-size:clamp(15px,1.8vw,19px);line-height:1.65}.nojs .quote-panel{position:relative;inset:auto;opacity:1;transform:none;margin-bottom:12px}.nojs .quote-stage{display:grid}.nojs .scr{margin-top:20px}.pt.end{opacity:0;pointer-events:none}.pt .logo.big{font-size:clamp(22px,4vw,40px);margin-bottom:6px}.pt.end p{letter-spacing:.3em;margin:0 0 26px}.snd{position:absolute;right:5vw;bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:3;min-height:44px;padding:10px 18px;border-radius:99px;border:1px solid var(--line);background:rgba(18,12,9,.6);backdrop-filter:blur(8px);color:var(--cream);font:500 13px Inter,sans-serif;letter-spacing:.06em;cursor:pointer;transition:.25s}.snd:hover,.snd[aria-pressed=true]{border-color:var(--gold);color:var(--gold)}
+.scr{font-size:12px;letter-spacing:.2em;color:var(--mute);text-transform:uppercase;display:flex;align-items:center;gap:12px}.scr span{width:1px;height:40px;background:linear-gradient(var(--gold),transparent);animation:sc 2s ease-in-out infinite}@keyframes sc{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.srow{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 0 16px;-webkit-overflow-scrolling:touch}.srow>*{flex:0 0 min(340px,86vw);scroll-snap-align:start;background:#fff;color:#111;border-radius:14px;overflow:hidden;min-height:220px}.srow a{color:#7a4a1f}.sh{margin:46px 0 14px;font-size:clamp(24px,3.4vw,36px)}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{border:1px solid var(--line);background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.01));border-radius:18px;padding:26px;transition:.3s}
+.card:hover{border-color:var(--gold);transform:translateY(-4px)}.card h3{font-size:24px;margin-bottom:10px}.card p{color:var(--mute);margin:0 0 16px;font-size:15px}
+.about{display:grid;gap:40px;grid-template-columns:1fr;align-items:center}@media(min-width:860px){.about{grid-template-columns:1fr 1.2fr}}
+.portrait{aspect-ratio:4/5;border-radius:20px;border:1px solid var(--line);background:linear-gradient(160deg,#3a2214,#120c09) center/cover;display:grid;place-items:center;color:var(--mute);font-size:14px;overflow:hidden}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.about p{color:var(--mute)}
+.feed{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.post{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--bg2);cursor:pointer;transition:.3s}.post:hover{border-color:var(--gold);transform:translateY(-4px)}
+.post .m{aspect-ratio:4/5;background:#2a170c;display:block;width:100%;object-fit:cover}.post .b{padding:16px}.post h3{font-size:20px}.post small{color:var(--mute)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}.tabs button{padding:8px 16px;font-size:13px}.tabs .on{background:var(--gold);color:#1b120d}
+.empty{border:1px dashed var(--line);border-radius:18px;padding:40px;text-align:center;color:var(--mute)}
+dialog{background:var(--bg2);color:var(--cream);border:1px solid var(--line);border-radius:20px;padding:0;width:min(920px,94vw);max-height:92vh}dialog::backdrop{background:rgba(0,0,0,.8)}
+.dl{display:grid;grid-template-columns:1fr}@media(min-width:800px){.dl{grid-template-columns:1.2fr 1fr}}.dl .m{width:100%;max-height:70vh;object-fit:contain;background:#000}.dl .s{padding:22px;overflow:auto;max-height:70vh}
+input,textarea,select{width:100%;background:rgba(255,255,255,.06);border:1px solid var(--line);color:var(--cream);padding:12px 14px;border-radius:12px;font:inherit;margin:6px 0 14px}
+label{font-size:13px;color:var(--mute)}.cm{border-top:1px solid var(--line);padding:10px 0;font-size:14px}.cm b{color:var(--gold)}
+.cta{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;overflow:hidden;background:var(--bg)}
+.cta .glow{position:absolute;inset:-10%;background:radial-gradient(circle at calc(50% + var(--mx,0)*60px) calc(50% + var(--my,0)*60px),rgba(200,150,90,.35),transparent 45%),radial-gradient(circle at 20% 80%,#3a2214,transparent 50%);animation:amb 12s ease-in-out infinite alternate;transition:background-position .2s}
+@keyframes amb{to{transform:scale(1.08) translate(1%,-1%)}}
+.cta>*:not(.glow){position:relative}.cta>video.cv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}.cshade{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(12,8,6,.35),rgba(12,8,6,.22) 50%,rgba(12,8,6,.5))}.cta>h2,.cta>p{text-shadow:0 2px 24px rgba(0,0,0,.7)}.cta .glow{z-index:1;mix-blend-mode:screen;opacity:.3}.cta>h2,.cta>p,.cta>.btn{z-index:2}
+@media(min-width:900px){.cta{background:#0c0806 url(assets/hero-bg.jpg) center/cover}.cta>video.cv:not(.cv2){left:50%;right:auto;width:min(44vw,calc(100svh*.5625));transform:translateX(-50%);border-radius:18px}}
+.cta h2{font-size:clamp(40px,9vw,120px);font-weight:900;margin-bottom:22px}.cta p{max-width:46ch;color:var(--mute);margin:0 auto 34px}
+.cta .btn{padding:20px 46px;font-size:16px}
+footer{padding:60px 5vw 30px;border-top:1px solid var(--line)}.fg{display:grid;gap:34px;grid-template-columns:1fr}@media(min-width:760px){.fg{grid-template-columns:1.4fr 1fr 1fr 1fr}}
+footer h4{font-size:12px;letter-spacing:.2em;color:var(--gold);margin:0 0 12px}footer li{list-style:none;margin:6px 0}footer ul{padding:0;margin:0}footer li a{color:var(--mute);transition:.25s}footer li a:hover{color:var(--cream);padding-left:4px}
+.copy{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-size:12px;letter-spacing:.1em;color:var(--mute)}
+.studio{position:fixed;inset:0;z-index:40;background:var(--bg);overflow:auto;padding:80px 5vw 40px;display:none}.studio.open{display:block}
+.stats{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));margin:20px 0}.stats div{border:1px solid var(--line);border-radius:14px;padding:14px}.stats b{font:700 28px 'Playfair Display';display:block;color:var(--gold)}
+.two{display:grid;gap:30px;grid-template-columns:1fr}@media(min-width:900px){.two{grid-template-columns:1fr 1fr}}
+.row2{display:flex;justify-content:space-between;gap:10px;align-items:center;border-bottom:1px solid var(--line);padding:10px 0;font-size:14px}.row2 .btn{padding:6px 14px;min-height:36px;font-size:12px}
+#trail{position:fixed;inset:0;pointer-events:none;z-index:1}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}.rv.in,.nojs .rv{opacity:1;transform:none}
+.note{font-size:13px;color:var(--mute)}.err{color:#e58a7a}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+:root{--bg:#100a07;--bg2:#1b120d;--cream:#f6eddf;--mute:#c2b19a;--gold:#d4a36a;--line:rgba(246,237,223,.13)}
+::selection{background:var(--gold);color:var(--bg)}
+.skip-link{position:fixed;top:8px;left:8px;z-index:50;padding:10px 14px;border-radius:8px;background:var(--cream);color:var(--bg);transform:translateY(-150%)}
+.skip-link:focus{transform:translateY(0)}
+nav{background:rgba(16,10,7,.82);padding-left:clamp(20px,5vw,76px);padding-right:clamp(20px,5vw,76px)}
+nav .logo{letter-spacing:.11em}
+nav .links a:not(.btn){position:relative}
+nav .links a:not(.btn):after{content:'';position:absolute;left:0;right:100%;bottom:-5px;height:1px;background:var(--gold);transition:right .25s}
+nav .links a:not(.btn):hover:after,nav .links a:not(.btn):focus-visible:after{right:0}
+.menu-toggle{display:none;width:46px;height:46px;border:1px solid var(--line);border-radius:50%;background:rgba(255,255,255,.04);color:var(--cream);cursor:pointer;place-items:center;gap:5px}
+.menu-toggle span{display:block;width:17px;height:1px;background:currentColor;transition:transform .2s}
+.menu-toggle[aria-expanded=true] span:first-child{transform:translateY(3px) rotate(45deg)}
+.menu-toggle[aria-expanded=true] span:last-child{transform:translateY(-3px) rotate(-45deg)}
+h1,h2{letter-spacing:-.035em}
+section{padding-left:clamp(22px,7vw,112px);padding-right:clamp(22px,7vw,112px)}
+.pour{background:#0c0806 url(assets/hero-bg.jpg) center/cover}
+.stick{background:linear-gradient(100deg,rgba(16,10,7,.76),rgba(16,10,7,.08) 80%)}
+.pt{width:min(650px,90vw)}
+.pt h1{max-width:11ch;text-wrap:balance}
+.pt p{max-width:42ch}
+.brand-strip{display:flex;justify-content:center;align-items:center;gap:clamp(14px,4vw,48px);flex-wrap:wrap;padding:22px 5vw;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--mute);font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+.brand-strip span+span:before{content:'✦';color:var(--gold);margin-right:clamp(14px,4vw,48px)}
+#about{background:radial-gradient(ellipse at 85% 50%,rgba(212,163,106,.08),transparent 40%),var(--bg)}
+.about{max-width:1240px;margin:auto;gap:clamp(32px,7vw,96px)}
+.portrait{box-shadow:0 28px 80px rgba(0,0,0,.32);border-radius:24px}
+.about h2{max-width:11ch}
+.about h3{margin:34px 0 12px;color:var(--gold);font-size:21px}
+.about p{max-width:62ch}
+.about-tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.about-tags span{border:1px solid var(--line);border-radius:99px;padding:8px 13px;color:var(--mute);font-size:12px;letter-spacing:.04em}
+#craft>*,#gallery>*,#services>*{max-width:1240px;margin-left:auto;margin-right:auto}
+#craft .grid,#services .grid{margin-top:42px}
+.card{position:relative;border-radius:20px;padding:clamp(22px,3vw,34px);background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.012));box-shadow:0 14px 36px rgba(0,0,0,.12)}
+.card:after{content:'';position:absolute;left:26px;right:26px;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(212,163,106,.42),transparent);opacity:0;transition:opacity .25s}
+.card:hover:after{opacity:1}
+.card h3{font-size:clamp(20px,2.4vw,25px)}
+.card p{line-height:1.75}
+#gallery{background:linear-gradient(180deg,var(--bg),#140d09 100%)}
+#gallery .feed{margin-top:32px}
+.post{border-color:rgba(246,237,223,.1);box-shadow:0 14px 36px rgba(0,0,0,.18)}
+.post .m{aspect-ratio:4/5;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.post:hover .m{transform:scale(1.035)}
+.post .b{position:relative;background:linear-gradient(180deg,rgba(27,18,13,.82),var(--bg2))}
+.post h3{margin-bottom:6px}
+.tabs button{border-color:var(--line)}
+#services>p{max-width:760px;line-height:1.8}
+.cta{min-height:min(100svh,900px);background:radial-gradient(ellipse at 50% 40%,#4a2d19,#100a07 70%)}
+.cta>video.cv{opacity:.66;filter:saturate(.82) contrast(1.04)}
+.cta h2{max-width:13ch;font-size:clamp(44px,8vw,108px);text-wrap:balance}
+.cta p{max-width:52ch}
+.cta .btn{box-shadow:0 12px 38px rgba(212,163,106,.18)}
+.contact-options{width:min(560px,94vw);padding:clamp(22px,5vw,36px)}
+.contact-options h3{font-size:clamp(28px,6vw,38px);margin-bottom:10px}
+.contact-options .note{line-height:1.75}
+.contact-service{margin:18px 0;padding:12px 14px;border:1px solid var(--line);border-radius:12px;color:var(--gold);font-size:14px}
+.contact-choices{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}
+.contact-choice{display:flex;flex-direction:column;justify-content:center;min-height:84px;padding:15px 18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.035);transition:transform .2s,border-color .2s,background .2s}
+.contact-choice:hover,.contact-choice:focus-visible{transform:translateY(-2px);border-color:var(--gold);background:rgba(212,163,106,.09)}
+.contact-choice strong{font-family:'Playfair Display',Georgia,serif;font-size:19px}
+.contact-choice span{margin-top:4px;color:var(--mute);font-size:12px}
+.contact-email-address{color:var(--cream);user-select:all;overflow-wrap:anywhere}
+.contact-email-actions{margin-top:12px}
+.contact-options #contactEmailStatus{min-height:1.6em}
+.contact-options .row{justify-content:flex-end}
+footer{padding:clamp(48px,7vw,84px) clamp(22px,7vw,112px) 28px;background:#0c0806}
+footer .fg{max-width:1240px;margin:auto}
+footer .note{max-width:28ch;line-height:1.8}
+footer .copy{max-width:1240px;margin-left:auto;margin-right:auto}
+@media(max-width:760px){
+ nav{padding-top:calc(10px + env(safe-area-inset-top,0px));padding-bottom:10px}
+ .menu-toggle{display:grid}
+ .nojs .menu-toggle{display:none}
+ nav .links{display:none;position:absolute;top:100%;left:0;right:0;padding:14px 22px 22px;background:rgba(16,10,7,.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:2px}
+ nav .links.open{display:flex}
+ #primaryNav a:not(.btn){display:block;padding:12px 4px}
+ nav .links .btn{text-align:center;margin-top:10px}
+ .nojs nav .links{display:flex;position:static;background:none;border:0;padding:10px 0;flex-direction:row;flex-wrap:wrap}
+ .nojs nav .links a:not(.btn){display:none}
+ .nojs nav .links .btn{margin:0}
+ .pour{height:260svh}
+ .brand-strip{gap:10px;padding:18px 22px;font-size:9px;letter-spacing:.12em}
+ .brand-strip span+span:before{margin-right:10px}
+ .about{gap:28px}
+ .portrait{aspect-ratio:4/4.5}
+ .cta{min-height:82svh}
+ .cta>video.cv{object-fit:cover}
+ .cta .btn{padding:16px 28px}
+ .contact-choices{grid-template-columns:1fr}
+ .contact-choice{min-height:72px}
+}
+</style></head>
+<body class="nojs">
+<a class="skip-link" href="#about">Skip to content</a>
+<canvas id="trail" aria-hidden="true"></canvas>
+<nav aria-label="Primary"><a class="logo" href="#top" aria-label="Sunny Dohty the Barista, home"><img src="assets/logo.png" alt="" width="42" height="42"><span>SUNNY <b>DOHTY</b></span></a><button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span></button><div class="links" id="primaryNav"><a href="#about">About</a><a href="#craft">What I Do</a><a href="#gallery">Gallery</a><a href="#services">Work With Me</a><a class="btn fill" href="#contact">Let's Connect</a></div></nav>
+
+<main>
+<div class="pour" id="top"><div class="stick"><video id="pv" muted playsinline preload="auto" aria-label="Pour-over coffee being brewed, controlled by your scroll"></video>
+<button class="snd" id="snd" aria-pressed="false">🔇 Sound off</button><div class="pt" id="pt1"><div class="eyebrow">Sunny Dohty — The Barista</div><div class="quote-stage" id="quoteStage" aria-live="off">
+<div class="quote-panel" data-start="-.04" data-end=".22" aria-hidden="false"><h1>Crafting experiences.<br><em>One cup at a time.</em></h1><p>Where coffee meets creativity.</p></div>
+<div class="quote-panel" data-start=".18" data-end=".42" aria-hidden="true"><h2>Passion in every pour.<br><em>Precision in every cup.</em></h2><p>Exceptional coffee, thoughtfully prepared and beautifully presented.</p></div>
+<div class="quote-panel" data-start=".38" data-end=".62" aria-hidden="true"><h2>Coffee artistry.<br><em>Made to be remembered.</em></h2><p>From the first aroma to the final detail, every moment matters.</p></div>
+<div class="quote-panel" data-start=".58" data-end=".82" aria-hidden="true"><h2>From first sip<br><em>to favourite drink.</em></h2><p>Signature coffees, refreshing blends and imaginative creations.</p></div>
+<div class="quote-panel" data-start=".78" data-end=".95" aria-hidden="true"><h2>Every cup tells a story.<br><em>Let’s make yours.</em></h2><p>Good coffee. Creative drinks. Unforgettable experiences.</p></div>
+</div><div class="scr"><span></span>Scroll to pour</div></div>
+<div class="pt end" id="pt2"><img class="blg" src="assets/logo.png" alt="Sunny Dohty the Barista logo"><a class="btn fill" href="#craft">EXPLORE MY CRAFT</a></div></div></div>
+<div class="brand-strip" aria-label="Sunny Dohty services"><span>Specialty coffee</span><span>Signature drinks</span><span>Menu consulting</span><span>Creative content</span></div>
+<header class="hero" id="old" style="display:none">
+<div class="eyebrow">Sunny Dohty the Barista</div>
+<h1 id="hl">More than coffee. <em>It's an experience.</em></h1>
+<p id="tag">Crafting exceptional coffee, one cup and one moment at a time.</p>
+<div class="row"><a class="btn fill" href="#craft">Explore My Craft</a><a class="btn" href="#gallery">View My Work</a></div></header>
+
+<section id="about"><div class="about"><div class="portrait" id="portrait"><img src="assets/sunny-portrait.jpg" alt="Portrait of Derrick, Sunny Dohty the Barista" loading="lazy" style="object-position:50% 25%"></div><div class="rv"><div class="eyebrow">About Sunny Dohty</div><h2>The person behind the cup.</h2>
+<p id="bio">I'm Derrick, a professional barista and beverage creator passionate about transforming everyday drinks into extraordinary experiences.</p>
+<p>From beautifully crafted specialty coffee and artistic latte designs to refreshing smoothies, signature milkshakes and innovative beverages, my mission is to inspire, create and elevate the beverage experience.</p>
+<h3>My vision</h3><p>To inspire the next generation of coffee lovers and beverage professionals while helping businesses discover the creativity and possibilities behind every cup.</p>
+<div class="about-tags" aria-label="Derrick's specialties"><span>Barista</span><span>Beverage creator</span><span>Menu consultant</span></div></div></div></section>
+
+<section id="craft" style="background:var(--bg2)"><div class="eyebrow">What I do</div><h2 class="rv">Creativity in every cup.</h2>
+<div class="grid">
+<div class="card rv"><h3>Specialty coffee &amp; coffee artistry</h3><p>Exceptional coffee prepared with quality, precision and beautiful presentation.</p></div>
+<div class="card rv"><h3>Beverage development</h3><p>Creative recipes, signature beverages and refreshing menu ideas for cafés, restaurants and hospitality businesses.</p></div>
+<div class="card rv"><h3>Menu consulting</h3><p>Innovative, marketable and customer-focused drinks to help cafés and restaurants upgrade their beverage menus.</p></div>
+<div class="card rv"><h3>Content creation</h3><p>Coffee inspiration, barista skills, recipes, behind-the-scenes moments and creative beverage experiences.</p></div></div></section>
+
+<section id="gallery"><div class="eyebrow">The Coffee Journal</div><h2 class="rv">A visual taste of the craft.</h2><p class="note">Specialty coffee, latte artistry and colorful creations—made to be savored with your eyes first.</p>
+<div class="tabs" id="tabs"></div><div class="feed" id="feed"></div><p class="note" id="gnote"></p>
+<div id="social" hidden><h3 class="sh">From the feed</h3><div class="srow" id="srow"></div></div></section>
+
+<section id="services" style="background:var(--bg2)"><div class="eyebrow">For coffee lovers &amp; businesses</div><h2 class="rv">Let’s create something extraordinary.</h2>
+<p class="note">Whether you're a coffee enthusiast, hospitality professional, café owner or brand looking for creative collaboration, let's bring new beverage ideas to life. Availability and pricing are confirmed after you send an inquiry.</p>
+<div class="grid" id="svc"></div></section>
+
+<section class="cta" id="cta"><video class="cv" src="assets/cta-loop-hd.mp4" muted loop playsinline preload="metadata" aria-label="Coffee being prepared"></video><div class="cshade"></div><button class="snd" id="csnd" aria-pressed="false" style="position:absolute;z-index:3">🔇 Sound off</button><audio id="ca" src="assets/cta-audio.mp4" loop preload="none"></audio><div class="glow"></div><h2>Let's create<br>something extraordinary.</h2><p>Good coffee. Creative drinks. Unforgettable experiences. Get in touch to bring your next beverage idea to life.</p><button class="btn fill" id="connect">LET'S CONNECT</button></section>
+</main>
+
+<footer><div class="fg"><div><img class="flg" src="assets/logo.png" alt="Sunny Dohty the Barista logo" loading="lazy"><div class="logo">SUNNY <b>DOHTY</b> THE BARISTA</div><p class="note">Good coffee. Creative drinks. Unforgettable experiences.</p></div>
+<div><h4>EXPLORE</h4><ul><li><a href="#top">Home</a></li><li><a href="#about">About Sunny</a></li><li><a href="#craft">My Craft</a></li><li><a href="#gallery">Creator Gallery</a></li></ul></div>
+<div><h4>SERVICES</h4><ul><li><a href="#services">Specialty Coffee</a></li><li><a href="#services">Beverage Development</a></li><li><a href="#services">Menu Consulting</a></li><li><a href="#services">Content Creation</a></li></ul></div>
+<div><h4>CONNECT</h4><ul id="soc"><li><a data-k="instagram">Instagram</a></li><li><a data-k="tiktok">TikTok</a></li><li><a data-k="whatsapp">WhatsApp</a></li><li><a data-k="email">Email</a></li></ul></div></div>
+<div class="copy" id="copy"></div></footer>
+
+<dialog id="post"><div id="postBody"></div><div style="padding:0 22px 18px"><button class="btn" onclick="post.close()">Close</button></div></dialog>
+<dialog id="contactOptions" class="contact-options" aria-labelledby="contactOptionsTitle"><div class="eyebrow">Get in touch</div><h3 id="contactOptionsTitle">Let's talk drinks.</h3><p class="note">Choose where you'd like to message Derrick. Your enquiry will include the service you're interested in.</p><p id="contactService" class="contact-service"></p><div class="contact-choices">
+<a class="contact-choice" id="contactWhatsApp" target="_blank" rel="noopener noreferrer"><strong>WhatsApp</strong><span>Start a direct chat</span></a>
+<a class="contact-choice" id="contactInstagram" target="_blank" rel="noopener noreferrer"><strong>Instagram</strong><span>Message @sunny_d_barista</span></a>
+<a class="contact-choice" id="contactTikTok" target="_blank" rel="noopener noreferrer"><strong>TikTok</strong><span>Message @dohtybarista</span></a>
+<a class="contact-choice" id="contactEmail" target="_blank" rel="noopener noreferrer"><strong>Email Derrick</strong><span>Open a prefilled Gmail message</span></a>
+</div><p class="note">Or contact Derrick directly at <strong id="contactEmailAddress" class="contact-email-address">derrickvidoti@gmail.com</strong></p><div class="row contact-email-actions"><a class="btn" id="contactMailApp">Use email app</a><button class="btn" type="button" id="copyContactEmail">Copy email address</button></div><p class="note" id="contactEmailStatus" role="status" aria-live="polite"></p><div class="row"><button class="btn" type="button" id="contactFormButton">Use inquiry form</button><button class="btn" type="button" id="contactOptionsClose">Close</button></div></dialog>
+<dialog id="contact"><form id="cf" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="padding:26px"><input type="hidden" name="form-name" value="contact"><p hidden><label>Skip <input name="bot-field"></label></p><h3 style="font-size:32px;margin-bottom:8px">Let's connect</h3><p class="note">Tell Sunny about your idea.</p>
+<label for="cn">Name</label><input id="cn" name="name" required maxlength="80"><label for="ce">Email or phone</label><input id="ce" name="contact" required maxlength="120">
+<label for="cs">Service</label><select id="cs" name="service"></select><label for="cm">Message</label><textarea id="cm" name="message" rows="4" required maxlength="1000"></textarea>
+<div class="row"><button class="btn fill">Send inquiry</button><button type="button" class="btn" id="contactFormCancel">Cancel</button></div><p class="note" id="cmsg" role="status"></p></form></dialog>
+
+<script src="config.js"></script>
+<script>
+document.body.classList.remove('nojs');
+const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const SERVICES=[
+ {name:'Specialty coffee & coffee artistry',description:'Beautifully crafted coffee experiences, prepared with precision and care.'},
+ {name:'Beverage development',description:'Creative drink recipes, signature beverages and fresh menu ideas for hospitality businesses.'},
+ {name:'Menu consulting',description:'Customer-focused beverage menus designed to help cafés and restaurants stand out.'},
+ {name:'Content creation',description:'Coffee inspiration, recipes, barista skills and creative behind-the-scenes content.'}
+];
+$('#copy').textContent='© '+new Date().getFullYear()+' SUNNY DOHTY THE BARISTA. ALL RIGHTS RESERVED.';
+$('#svc').innerHTML=SERVICES.map(s=>`<div class="card rv"><h3>${s.name}</h3><p>${s.description}</p><button class="btn" data-s="${s.name}">Inquire</button></div>`).join('');
+$('#cs').innerHTML=SERVICES.map(s=>`<option>${s.name}</option>`).join('');
+let selectedService='';
+const openC=s=>{
+ selectedService=s||'';
+ const detail=selectedService?`I'm interested in ${selectedService}. Please let me know how we can get started.`:'I would like to enquire about your coffee and beverage services. Please let me know how we can get started.';
+ const message=`Hi Derrick! ${detail}`;
+ const subject=selectedService?`Enquiry: ${selectedService}`:'Coffee and beverage enquiry';
+ $('#contactService').textContent=selectedService?`Enquiring about: ${selectedService}`:'Enquiring about Sunny Dohty’s services';
+ $('#contactWhatsApp').href=`${site.whatsapp||'https://wa.me/254728971710'}?text=${encodeURIComponent(message)}`;
+ $('#contactInstagram').href=site.instagram||'https://www.instagram.com/sunny_d_barista/';
+ $('#contactTikTok').href=site.tiktok||'https://www.tiktok.com/@dohtybarista';
+ const email=site.email||'derrickvidoti@gmail.com',mailto=`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+ $('#contactEmail').href=`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+ $('#contactMailApp').href=mailto;$('#contactEmailAddress').textContent=email;$('#contactEmailStatus').textContent='';
+ if(selectedService)$('#cs').value=selectedService;
+ contactOptions.showModal();
+};
+document.addEventListener('click',e=>{const b=e.target.closest('[data-s]');if(b)openC(b.dataset.s)});
+$('#connect').onclick=()=>openC();document.querySelectorAll('a[href="#contact"]').forEach(a=>a.onclick=e=>{e.preventDefault();openC()});
+$('#contactFormButton').onclick=()=>{contactOptions.close();if(selectedService)$('#cs').value=selectedService;$('#contact').showModal()};
+$('#contactOptionsClose').onclick=()=>contactOptions.close();
+$('#contactFormCancel').onclick=()=>$('#contact').close();
+$('#copyContactEmail').onclick=async()=>{
+ const email=site.email||'derrickvidoti@gmail.com',status=$('#contactEmailStatus');
+ try{await navigator.clipboard.writeText(email);status.textContent='Email address copied.'}
+ catch(error){
+  const field=document.createElement('textarea');field.value=email;field.setAttribute('readonly','');field.style.position='fixed';field.style.opacity='0';document.body.appendChild(field);field.select();
+  const copied=document.execCommand('copy');field.remove();
+  status.textContent=copied?'Email address copied.':'Copy was blocked. Select the email address above to copy it.';
+ }
+};
+const menuToggle=$('#menuToggle'),primaryNav=$('#primaryNav');
+const setMenu=open=>{primaryNav.classList.toggle('open',open);menuToggle.setAttribute('aria-expanded',String(open));menuToggle.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu')};
+menuToggle.onclick=()=>setMenu(menuToggle.getAttribute('aria-expanded')!=='true');
+primaryNav.addEventListener('click',e=>{if(e.target.closest('a'))setMenu(false)});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menuToggle.getAttribute('aria-expanded')==='true'){setMenu(false);menuToggle.focus()}});
+document.addEventListener('click',e=>{if(menuToggle.getAttribute('aria-expanded')==='true'&&!e.target.closest('nav'))setMenu(false)});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+const obs=()=>document.querySelectorAll('.rv:not(.in)').forEach(n=>io.observe(n));obs();
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches,touch=matchMedia('(hover:none)').matches;if(RM)document.querySelector('.hv')?.pause();
+// pointer-responsive closing section
+if(!RM&&!touch){const c=$('#cta');let t=null,px=0,py=0;c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();px=(e.clientX-r.left)/r.width-.5;py=(e.clientY-r.top)/r.height-.5;if(!t)t=requestAnimationFrame(()=>{c.style.setProperty('--mx',px);c.style.setProperty('--my',py);t=null})});
+// cursor trail (single canvas, capped particles)
+const cv=$('#trail'),x=cv.getContext('2d');let P=[],run=false;const rs=()=>{cv.width=innerWidth;cv.height=innerHeight};rs();addEventListener('resize',rs);
+addEventListener('pointermove',e=>{P.push({x:e.clientX,y:e.clientY,a:.5,r:3+Math.random()*3});if(P.length>40)P.shift();if(!run){run=true;requestAnimationFrame(tick)}},{passive:true});
+function tick(){x.clearRect(0,0,cv.width,cv.height);P=P.filter(p=>(p.a-=.02)>0);P.forEach(p=>{x.fillStyle=`rgba(200,150,90,${p.a*.6})`;x.beginPath();x.arc(p.x,p.y,p.r,0,7);x.fill()});if(P.length)requestAnimationFrame(tick);else run=false}}
+else $('#trail').remove();
+
+// ---- persistent backend (Artifact runtime) ----
+let db,user,assets,uid,isOwner=false,posts=[],drafts=[],comments=[],likes=[],cat='All',site={},unsubs=[];
+const fmt=t=>new Date(t).toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'});
+const media=m=>m.type==='video'?`<video class="m" src="${esc(m.url)}" preload="metadata" muted></video>`:`<img class="m" loading="lazy" src="${esc(m.url)}" alt="${esc(m.alt||'')}">`;
+function renderSite(){
+ if(site.headline)$('#hl').textContent=site.headline;if(site.tagline)$('#tag').textContent=site.tagline;if(site.bio)$('#bio').textContent=site.bio;
+ if(site.portrait)$('#portrait').innerHTML=`<img src="${esc(site.portrait)}" alt="Portrait of Sunny Dohty">`;
+ document.querySelectorAll('#soc a').forEach(a=>{const k=a.dataset.k,v=site[k];if(v){a.href=k==='email'?'mailto:'+v:v;a.target='_blank';a.rel='noopener'}else{a.removeAttribute('href');a.title='Not configured yet'}});
+}
+function renderFeed(){
+ const cats=['All',...new Set(posts.map(p=>p.category).filter(Boolean))];
+ $('#tabs').innerHTML=cats.map(c=>`<button class="btn ${c===cat?'on':''}" aria-pressed="${c===cat}" data-c="${esc(c)}">${esc(c)}</button>`).join('');
+ const list=posts.filter(p=>cat==='All'||p.category===cat);
+ $('#feed').innerHTML=list.length?list.map(p=>`<article class="post" role="button" aria-label="View ${esc(p.title)}" tabindex="0" data-id="${p.id}">${media(p.media[0])}<div class="b"><h3>${esc(p.title)}</h3><small>${esc(p.category)} · ${fmt(p.at)}</small></div></article>`).join(''):'<div class="empty">No posts published yet. Sunny\'s first pours will appear here.</div>';
+}
+document.addEventListener('click',e=>{const t=e.target.closest('#tabs button');if(t){cat=t.dataset.c;renderFeed()}const p=e.target.closest('.post');if(p)openPost(p.dataset.id)});
+document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.classList?.contains('post')){e.preventDefault();openPost(e.target.dataset.id)}});
+function openPost(id){
+ const p=posts.find(x=>x.id===id);if(!p)return;
+ const lk=likes.filter(l=>l.postId===id),mine=uid&&lk.some(l=>l.uid===uid),cs=comments.filter(c=>c.postId===id&&!c.hidden);
+ $('#postBody').innerHTML=`<div class="dl"><div>${p.media.map(m=>m.type==='video'?`<video class="m" src="${esc(m.url)}" controls playsinline></video>`:`<img class="m" src="${esc(m.url)}" alt="${esc(p.title)}">`).join('')}</div><div class="s"><small>${esc(p.category||'')} · ${fmt(p.at)}</small><h3 style="font-size:30px;margin:6px 0">${esc(p.title)}</h3><p>${esc(p.caption)}</p><p class="note">${(p.tags||[]).map(t=>'#'+esc(t)).join(' ')}</p>
+ <div class="row"><button class="btn" id="sh2">Share</button></div>
+ 
+ ${db?`<label for="cn2">Display name</label><input id="cn2" maxlength="40"><label for="ct">Comment</label><textarea id="ct" rows="2" maxlength="300"></textarea><button class="btn fill" id="cb">Post comment</button><p class="note err" id="cer"></p>`:''}</div></div>`;
+ if(!post.open)post.showModal();
+ $('#sh2').onclick=()=>navigator.share?navigator.share({title:p.title,url:location.href}).catch(()=>{}):navigator.clipboard?.writeText(location.href);
+ if(!db)return;
+ $('#lk').onclick=async()=>{try{const r=db.collection('likes').doc(id+'_'+uid);mine?await r.delete():await r.set({postId:id,uid,at:Date.now()})}catch(e){$('#cer').textContent='Could not save your like.'}};
+ $('#cb').onclick=async()=>{const n=$('#cn2').value.trim(),t=$('#ct').value.trim();if(!n||t.length<2){$('#cer').textContent='Add a name and a comment.';return}
+  try{await db.collection('comments').doc('c'+Date.now()+Math.random().toString(36).slice(2,6)).set({postId:id,uid,name:n,text:t,hidden:false,at:Date.now()})}catch(e){$('#cer').textContent='Could not post comment.'}};
+}
+$('#cf').onsubmit=async e=>{e.preventDefault();const m=$('#cmsg');m.textContent='Sending…';
+ try{const r=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(e.target)).toString()});if(!r.ok)throw 0;m.textContent='Sent. Sunny will get back to you.';e.target.reset()}catch(x){m.textContent='Could not send. Please try again or contact Sunny directly.'}};
+
+function sub(path,fn){try{unsubs.push(db.collection(path).onSnapshot(s=>fn(s.docs.map(d=>({id:d.id,...d.data()}))),()=>{}))}catch(e){}}
+function social(){const L=(window.SOCIAL||[]).filter(x=>/^https:\/\//.test(x.url||''));if(!L.length)return;$('#social').hidden=false;
+ $('#srow').innerHTML=L.map(x=>{const u=esc(x.url);
+  if(x.platform==='instagram')return `<div><blockquote class="instagram-media" data-instgrm-permalink="${u}" data-instgrm-version="14" style="margin:0;width:100%"><a href="${u}" target="_blank" rel="noopener">View on Instagram</a></blockquote></div>`;
+  if(x.platform==='tiktok'){const id=(x.url.match(/video\/(\d+)/)||[])[1]||'';return `<div style="background:transparent"><blockquote class="tiktok-embed" cite="${u}" data-video-id="${id}" style="max-width:340px;margin:0"><section><a href="${u}" target="_blank" rel="noopener">View on TikTok</a></section></blockquote></div>`}
+  if(x.platform==='youtube'){const id=(x.url.match(/(?:v=|youtu\.be\/|shorts\/)([\w-]{6,})/)||[])[1]||'';return `<div><iframe src="https://www.youtube-nocookie.com/embed/${esc(id)}" title="YouTube video" loading="lazy" allowfullscreen style="width:100%;aspect-ratio:9/16;border:0"></iframe></div>`}
+  return ''}).join('');
+ const load=src=>{const t=document.createElement('script');t.src=src;t.async=true;document.body.appendChild(t)};
+ if(L.some(x=>x.platform==='instagram'))load('https://www.instagram.com/embed.js');
+ if(L.some(x=>x.platform==='tiktok'))load('https://www.tiktok.com/embed.v2.js')}
+function lazySocial(){if(!(window.SOCIAL||[]).length)return;const g=$('#gallery');if(!('IntersectionObserver' in window)){social();return}const o=new IntersectionObserver(e=>{if(e[0].isIntersecting){o.disconnect();social()}},{rootMargin:'500px'});o.observe(g)}
+function init(){site=window.SITE||{};posts=(window.GALLERY||[]).map((g,i)=>({id:'g'+i,title:g.title||'',caption:g.caption||'',category:g.category||'',tags:g.tags||[],at:g.date?Date.parse(g.date):Date.now()-i,media:[{url:'assets/gallery/'+g.file,type:/\.(mp4|webm)$/i.test(g.file)?'video':'image',alt:g.title||''}]}));posts.sort((x,y)=>y.at-x.at);renderSite();renderFeed();lazySocial()}
+(()=>{const wrap=$('#top'),v=$('#pv'),_s=(v.src=innerWidth>=900?'assets/pour-hd.mp4':'assets/pour-scrub.mp4'),t1=$('#pt1'),t2=$('#pt2'),RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)),sm=x=>x*x*(3-2*x),seg=(p,a,b)=>sm(cl((p-a)/(b-a)));
+const quotes=[...document.querySelectorAll('.quote-panel')];
+let tgt=0,cur=0,raf=0,ready=false,last=-1,need=false;
+const upd=p=>{t1.style.opacity=1-seg(p,.91,1);t2.style.opacity=seg(p,.91,.99);t2.style.pointerEvents=p>.95?'auto':'none';quotes.forEach(q=>{const start=Number(q.dataset.start),end=Number(q.dataset.end),fade=.035,alpha=Math.min(seg(p,start,start+fade),1-seg(p,end-fade,end));q.style.opacity=String(alpha);q.style.transform=`translateY(${(1-alpha)*14}px)`;q.setAttribute('aria-hidden',alpha<.5?'true':'false')})};
+if(RM){$('#snd').hidden=true;v.addEventListener('loadedmetadata',()=>{v.currentTime=v.duration*.55});upd(1);return}
+const scr=()=>{const r=wrap.getBoundingClientRect(),m=wrap.offsetHeight-innerHeight;tgt=cl(-r.top/m)};
+function frame(){cur+=(tgt-cur)*.18;if(Math.abs(tgt-cur)<.0005)cur=tgt;
+ if(ready&&v.duration){const t=cur*(v.duration-.05);need=false;if(Math.abs(t-last)>.02){if(v.seeking)need=true;else{v.fastSeek?v.fastSeek(t):v.currentTime=t;last=t}}}
+ upd(cur);S.step(cur,Math.abs(tgt-cur));raf=(cur!==tgt||need)?requestAnimationFrame(frame):0}
+const kick=()=>{if(!raf)raf=requestAnimationFrame(frame)};
+const rdy=()=>{if(ready)return;ready=true;v.pause();last=-1;kick()};
+v.addEventListener('loadedmetadata',rdy);v.addEventListener('loadeddata',rdy);if(v.readyState>=1)rdy();
+let tried=false;const fb=()=>{if(tried||ready&&v.seekable.length)return;tried=true;fetch(v.currentSrc||v.src).then(r=>r.blob()).then(b=>{const u=URL.createObjectURL(b);ready=false;v.src=u;v.load()}).catch(()=>{})};
+v.addEventListener('error',fb);setTimeout(fb,4000);
+addEventListener('scroll',()=>{scr();kick()},{passive:true});addEventListener('resize',()=>{scr();kick()});
+const btn=$('#snd');let ctx,master,on=false;const G={};
+const S={step(p,diff){if(!on||!ctx)return;const act=Math.min(1,diff*90),w=(a,b,f=.015)=>seg(p,a,a+f)*(1-seg(p,b-f,b)),cup=w(.82,.9),pour=Math.max(w(0,.075)*.8,w(.25,.34)*.9,cup),steam=Math.max(w(.3,.4)*.5,w(.9,1.01)*.8),t=ctx.currentTime;
+ G.hi.g.gain.setTargetAtTime(.32*pour*act,t,.08);G.lo.g.gain.setTargetAtTime(.5*pour*act,t,.08);G.st.g.gain.setTargetAtTime(.22*steam*act,t,.1);G.lo.fl.frequency.setTargetAtTime(750+cup*450,t,.1)}};
+function build(){ctx=new(window.AudioContext||window.webkitAudioContext)();const n=ctx.sampleRate*2,b=ctx.createBuffer(1,n,ctx.sampleRate),d=b.getChannelData(0);for(let i=0;i<n;i++)d[i]=Math.random()*2-1;
+ master=ctx.createGain();master.gain.value=.7;master.connect(ctx.destination);
+ const src=(f,type,q)=>{const s=ctx.createBufferSource();s.buffer=b;s.loop=true;const fl=ctx.createBiquadFilter();fl.type=type;fl.frequency.value=f;fl.Q.value=q;const g=ctx.createGain();g.gain.value=0;s.connect(fl);fl.connect(g);g.connect(master);s.start();return{fl,g}};
+ G.hi=src(2600,'bandpass',.6);G.lo=src(800,'bandpass',2.2);G.st=src(6500,'highpass',.7);
+ const l=ctx.createOscillator(),lg=ctx.createGain();l.frequency.value=7;lg.gain.value=260;l.connect(lg);lg.connect(G.lo.fl.frequency);l.start()}
+if(RM)btn.hidden=true;
+btn.onclick=()=>{on=!on;if(on){if(!ctx)build();ctx.resume()}else if(ctx){ctx.suspend()}btn.setAttribute('aria-pressed',on);btn.textContent=on?'🔊 Sound on':'🔇 Sound off';if(on)kick()};
+document.addEventListener('visibilitychange',()=>{if(!ctx)return;document.hidden?ctx.suspend():on&&ctx.resume()});
+scr();cur=tgt;upd(cur);
+})();
+(()=>{const s=$('#cta'),vs=[...s.querySelectorAll('video.cv')],main=vs[0],SCRUB='assets/cta-scrub.mp4';
+let inView=false,fb=false,raf=0,t0=0;
+const loop=()=>{if(!inView){raf=0;return}const d=main.duration;if(d){const t=((performance.now()-t0)/1000)%d;vs.forEach(v=>{if(v.offsetParent&&!v.seeking&&Math.abs(v.currentTime-t)>.04)v.currentTime=t})}raf=requestAnimationFrame(loop)};
+const startFb=()=>{if(!fb){fb=true;vs.forEach(v=>{v.pause();v.removeAttribute('loop');v.src=SCRUB;v.load()});t0=performance.now()}if(!raf&&inView)raf=requestAnimationFrame(loop)};
+const tryPlay=()=>{vs.forEach(v=>{if(v.offsetParent){const p=v.play();if(p)p.catch(startFb)}});setTimeout(()=>{if(inView&&!fb&&main.paused)startFb()},1200)};
+if(matchMedia('(prefers-reduced-motion:reduce)').matches){$('#csnd').hidden=true;vs.forEach(v=>v.addEventListener('loadedmetadata',()=>{v.currentTime=1}));return}
+const au=$('#ca'),cb=$('#csnd');let aon=false;
+const ref=()=>fb?((performance.now()-t0)/1000)%(main.duration||10):main.currentTime;
+const aPlay=()=>{if(!aon||!inView)return;try{au.currentTime=ref()}catch(e){}au.play().catch(()=>{})};
+cb.onclick=()=>{aon=!aon;cb.setAttribute('aria-pressed',aon);cb.textContent=aon?'🔊 Sound on':'🔇 Sound off';aon?aPlay():au.pause()};
+setInterval(()=>{if(aon&&inView&&!au.paused&&Math.abs(au.currentTime-ref())>.35){try{au.currentTime=ref()}catch(e){}}},1000);
+new IntersectionObserver(e=>{inView=e[0].isIntersecting;if(inView){fb?startFb():tryPlay();aPlay()}else{if(!fb)vs.forEach(v=>v.pause());au.pause()}},{threshold:.15}).observe(s)})();
+renderSite();renderFeed();init();
+</script></body></html>
